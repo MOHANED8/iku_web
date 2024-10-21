@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="contact-form-wrapper">
+    <h1 class="text-center">Get in Touch</h1>
+    <p class="text-center">We would love to hear from you! Please fill out the form below and we will get in touch with you as soon as possible.</p>
+
+    <form method="post" class="contact-form">
+        <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+    </form>
+</div>

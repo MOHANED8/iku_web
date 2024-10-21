@@ -1,22 +1,152 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Reset some basic elements */
 body {
-  margin-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50; /* Darker shade for headings */
+}
+
+.hero {
+    background-image: url('~/images/hero-bg.jpg'); /* Background image for hero section */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn {
+    background-color: #3498db; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #2980b9; /* Darker shade on hover */
+    }
+
+.features {
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+    .feature-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+    }
+
+.about-team {
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .team-member img {
+        width: 150px; /* Adjust this value as needed */
+        height: 150px; /* Ensures the height is the same as the width for a square */
+        object-fit: cover; /* This property ensures the image covers the area without distortion */
+        border-radius: 50%; /* Optional: Makes the image circular */
+    }
+
+.contact {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+/* Styling for the contact form wrapper */
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+    .contact-form-wrapper h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .contact-form-wrapper p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #666;
+    }
+
+/* Styling for form inputs and textareas */
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+    .contact-form .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+/* Button Styling */
+.contact-form .btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .contact-form .btn:hover {
+        background-color: #0056b3;
+        cursor: pointer;
+    }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-form-wrapper {
+        padding: 15px;
+    }
+
+        .contact-form-wrapper h1 {
+            font-size: 2rem;
+        }
+
+        .contact-form-wrapper p {
+            font-size: 1rem;
+        }
 }
