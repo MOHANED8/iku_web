@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Delivery Home";
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 30px;">
+        <h1 class="display-4">Welcome, Delivery Partner!</h1>
+        <p class="lead">Manage your delivery tasks, view schedules, and get real-time updates here.</p>
+        <hr class="my-4">
+        <a href="@Url.Action("DeliveryTasks", "Delivery")" class="btn btn-primary btn-lg mt-3">View Tasks</a>
+    </div>
+
+    <!-- Tasks Section -->
+    <section class="tasks-section mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Today's Tasks</h5>
+                        <p class="card-text">Check out all the delivery tasks assigned to you for today.</p>
+                        <a href="@Url.Action("DeliveryTasks", "Delivery")" class="btn btn-outline-primary">View Today's Tasks</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Get Help</h5>
+                        <p class="card-text">If you're having issues or need assistance, contact support for more help.</p>
+                        <a href="@Url.Action("Support", "Delivery")" class="btn btn-outline-primary">Get Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <!-- Add any page-specific scripts here if necessary -->
+}

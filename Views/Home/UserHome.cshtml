@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<section class="hero-section text-center" style="background-color: #f8f9fa; padding: 50px;">
+    <h1 class="display-4">Welcome</h1>
+    <p class="lead">Learn about building Web apps with ASP.NET Core.</p>
+    <a href="@Url.Action("Register", "Account")" class="btn btn-primary mt-3">Get Started</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-4">
+    <div class="text-center p-3">
+        &copy; 2024 Buytopia | <a href="@Url.Action("Contact", "Support")">Contact Us</a>
+    </div>
+</footer>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpgrkK+uF0hOgR0PqVYO56o3Zy3/c5iALasjfjcFzMQ1CZoZ4g7p6m2F" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq5IsCniNT8nU3HsOfYcvA2k2GonJo4eg/0AKd7Y3oSy42Dco3" crossorigin="anonymous"></script>
+}

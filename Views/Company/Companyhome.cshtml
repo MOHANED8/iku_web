@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Company Home Page";
+}
+
+
+<div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 30px;">
+    <h1 class="display-4">Welcome, Company User!</h1>
+    <p class="lead">This is your company management portal. Here you can manage your company profile, track your progress, and view detailed reports.</p>
+    <hr class="my-4">
+    <a href="@Url.Action("Dashboard", "Company")" class="btn btn-primary btn-lg mt-3">Go to Dashboard</a>
+</div>
+
+<!-- Services Section -->
+<section class="services-section mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Company Profile</h5>
+                    <p class="card-text">Manage your company profile, update contact information, and view registered details.</p>
+                    <a href="@Url.Action("Profile", "Company")" class="btn btn-outline-primary">Manage Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Reports</h5>
+                    <p class="card-text">View and generate detailed reports related to your activities and performance metrics.</p>
+                    <a href="@Url.Action("Reports", "Company")" class="btn btn-outline-primary">View Reports</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Support</h5>
+                    <p class="card-text">Get assistance with any issues you may be facing, or contact customer support for more help.</p>
+                    <a href="@Url.Action("Support", "Company")" class="btn btn-outline-primary">Get Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpgrkK+uF0hOgR0PqVYO56o3Zy3/c5iALasjfjcFzMQ1CZoZ4g7p6m2F" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq5IsCniNT8nU3HsOfYcvA2k2GonJo4eg/0AKd7Y3oSy42Dco3" crossorigin="anonymous"></script>
+}
+
