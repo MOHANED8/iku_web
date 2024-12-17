@@ -1,0 +1,42 @@
+﻿@model ShoppingCart
+
+<div class="container mt-5">
+    <h2>Your Cart</h2>
+    @if (Model.Items.Count == 0)
+    {
+        <p>Your cart is empty. Start shopping now!</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.Price</td>
+                        <td>@item.Quantity</td>
+                        <td>@(item.Price * item.Quantity)</td>
+                    </tr>
+                }
+                <tr>
+                    <td colspan="3" class="text-end"><strong>Total:</strong></td>
+                    <td><strong>@Model.TotalPrice</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-end">
+            <a asp-action="Payment" asp-controller="Cart" class="btn btn-primary">Proceed to Payment</a>
+        </div>
+    }
+    
+</div>

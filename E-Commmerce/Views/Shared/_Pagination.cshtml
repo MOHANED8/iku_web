@@ -1,8 +1,7 @@
 ﻿@{
-    var prevDisabled = !Model.HasPrevoiusPage ? "disabled" : "";
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
 }
-
 
 <a asp-action="Index"
    asp-route-PageNumber="1"
@@ -21,7 +20,7 @@
     Next
 </a>
 <a asp-action="Index"
-   asp-route-PageNumber="@(Model.TotalPages )"
+   asp-route-PageNumber="@(Model.TotalPages)"
    class="btn btn-secondary @nextDisabled">
     Last
 </a>

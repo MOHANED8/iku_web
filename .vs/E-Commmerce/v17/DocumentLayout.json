@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\views\\account\\_changephoto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\views\\account\\_changephoto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\data\\migrations\\20241217141943_kopad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\data\\migrations\\20241217141943_kopad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "E-Commmerce\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "E-Commmerce\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T16:11:52.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ChangePhoto.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Views\\Account\\_ChangePhoto.cshtml",
+              "RelativeDocumentMoniker": "E-Commmerce\\Views\\Account\\_ChangePhoto.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Views\\Account\\_ChangePhoto.cshtml",
+              "RelativeToolTip": "E-Commmerce\\Views\\Account\\_ChangePhoto.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T16:11:48.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "E-Commmerce\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Models\\Product.cs",
+              "RelativeToolTip": "E-Commmerce\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:50:20.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Program.cs",
+              "RelativeDocumentMoniker": "E-Commmerce\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Program.cs",
+              "RelativeToolTip": "E-Commmerce\\Program.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowF8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:38:35.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241217141943_kopad.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Data\\Migrations\\20241217141943_kopad.cs",
+              "RelativeDocumentMoniker": "E-Commmerce\\Data\\Migrations\\20241217141943_kopad.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Data\\Migrations\\20241217141943_kopad.cs",
+              "RelativeToolTip": "E-Commmerce\\Data\\Migrations\\20241217141943_kopad.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:19:43.918Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

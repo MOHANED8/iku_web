@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using E_Commmerce.ViewModels.User;
 using E_Commmerce.ViewModels;
 
 namespace E_Commmerce.Data;
@@ -21,6 +20,9 @@ public class ApplicationDbcontext :IdentityDbContext<ApplicationUser>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+        builder.Entity<ApplicationUser>()
+        .HasIndex(u => u.Email)
+        .IsUnique();
         builder.Entity<ApplicationUser>().ToTable("Users");
         builder.Entity<IdentityRole>().ToTable("Roles");
         builder.Entity<IdentityUserRole<string>>().ToTable("UserRoles");
@@ -47,12 +49,17 @@ public class ApplicationDbcontext :IdentityDbContext<ApplicationUser>
                     new Category { Id = 14, Name = "Garden" },
                     new Category { Id = 15, Name = "Tools" },
                     new Category { Id = 16, Name = "Automotive" }
+
                     );
 
         builder.Entity<Category>()
             .HasMany(c => c.Products)
             .WithOne(p => p.Category)
             .OnDelete(DeleteBehavior.Cascade);
+
+        builder.Entity<Product>().HasData(
+    
+);
     }
    
 

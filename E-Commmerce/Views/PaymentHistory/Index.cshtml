@@ -1,0 +1,44 @@
+﻿@model List<E_Commmerce.Models.PaymentHistory>
+
+<div class="container mt-5">
+    <h2>Order History</h2>
+    @if (!Model.Any())
+    {
+        <p>You have no order history.</p>
+    }
+    else
+    {
+        @foreach (var payment in Model)
+        {
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Order Date: @payment.PaymentDate.ToString("f")</h5>
+                    <p>Total Price: <strong>@payment.TotalPrice</strong> L.E</p>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in payment.Items)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@(item.Price * item.Quantity)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    }
+</div>

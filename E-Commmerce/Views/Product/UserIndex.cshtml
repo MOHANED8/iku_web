@@ -1,15 +1,66 @@
-﻿@model List<ProductViewModel>
+﻿@model E_Commmerce.Helper.PageList<E_Commmerce.ViewModels.ProductViewModel>
 
-@foreach(var item in Model)
-{
-    <div class="card-group">
-        <div class="card">
-            <img src="/ProductImages/@item.ImageViewModel.ImageName" alt="Denim Jeans" style="width:150px" class="rounded">
-            <h1>@item.Name</h1>
-            <p class="price">@item.Price L.E</p>
-            <p>@item.Description</p>
-            <button class="btn btn-success mt-3">Add to Cart</button>
+<div class="container mt-4">
+    <!-- Search Bar -->
+    <form asp-action="UserIndex" method="get" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="searchTerm" class="form-control" placeholder="Search for products..." value="@ViewBag.SearchTerm" />
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
         </div>
+    </form>
+
+    <!-- Product List -->
+    <div class="row">
+        @if (Model.Count == 0)
+        {
+            <p class="text-center">No products found.</p>
+        }
+        else
+        {
+            @foreach (var product in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/ProductImages/@product.ImageViewModel.ImageName" alt="@product.Name" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">@product.Description</p>
+                            <p class="card-text"><strong>@product.Price</strong> L.E</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                                <input type="hidden" name="productId" value="@product.Id" />
+                                <button type="submit" class="btn btn-primary">Add to Cart</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
     </div>
-    <br />
-}
+</div>
+
+<!-- Pagination -->
+<div class="d-flex justify-content-between mt-4">
+    @if (Model.HasPreviousPage)
+    {
+        <a asp-action="UserIndex" asp-route-pageIndex="@(Model.PageIndex - 1)" asp-route-searchTerm="@ViewBag.SearchTerm" class="btn btn-primary">&laquo; Previous</a>
+    }
+    else
+    {
+        <span class="btn btn-secondary disabled">&laquo; Previous</span>
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a asp-action="UserIndex" asp-route-pageIndex="@(Model.PageIndex + 1)" asp-route-searchTerm="@ViewBag.SearchTerm" class="btn btn-primary">Next &raquo;</a>
+    }
+    else
+    {
+        <span class="btn btn-secondary disabled">Next &raquo;</span>
+    }
+</div>
+
+

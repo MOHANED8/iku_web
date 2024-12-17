@@ -2,120 +2,142 @@
 using E_Commmerce.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Security.AccessControl;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace E_Commmerce.Controllers
-
 {
     [Authorize(Roles = nameof(Roles.Admin))]
     public class RoleController : Controller
     {
-        private readonly RoleManager<IdentityRole> _roleRepository;
-        public RoleController(RoleManager<IdentityRole> roleRepository )
+        private readonly RoleManager<IdentityRole> _roleManager;
+
+        public RoleController(RoleManager<IdentityRole> roleManager)
         {
-            _roleRepository = roleRepository;
+            _roleManager = roleManager;
         }
 
-        public IActionResult Index()
+        // Displays a list of all roles
+        public async Task<IActionResult> Index()
         {
-            var list = _roleRepository.Roles.Select(r => new RoleViewModel()
+            var roles = _roleManager.Roles.Select(role => new RoleViewModel
             {
-                Id = r.Id,
-                Name = r.Name
+                Id = role.Id,
+                Name = role.Name
             }).ToList();
-            return View(list);
+
+            return View(roles);
         }
 
-
+        // Handles role creation
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Index(RoleViewModel model)
+        public async Task<IActionResult> Index(RoleViewModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                IdentityRole identityRole = new IdentityRole()
-                {
-                    Name = model.Name
-                };
-                var result = _roleRepository.CreateAsync(identityRole).Result;
-                if (result.Succeeded)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                }
+                return View(model);
             }
+
+            var identityRole = new IdentityRole
+            {
+                Name = model.Name
+            };
+
+            var result = await _roleManager.CreateAsync(identityRole);
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
             return View(model);
         }
 
-        public  IActionResult Delete(string Id)
+        // Handles role deletion
+        public async Task<IActionResult> Delete(string id)
         {
-           var role = _roleRepository.FindByIdAsync(Id).Result;
-            if(role != null)
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
             {
-                var result = _roleRepository.DeleteAsync(role).Result;
-                if(result.Succeeded)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    foreach(var error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                }
+                return NotFound();
             }
+
+            var result = await _roleManager.DeleteAsync(role);
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
             return RedirectToAction(nameof(Index));
         }
 
+        // Displays the edit form for a role
         [HttpGet]
-        public IActionResult Edit(string Id)
+        public async Task<IActionResult> Edit(string id)
         {
-            var role = _roleRepository.FindByIdAsync(Id).Result;
-            var model = new RoleViewModel()
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+
+            var model = new RoleViewModel
             {
                 Id = role.Id,
                 Name = role.Name
             };
+
             return View(model);
         }
 
+        // Handles role updates
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(RoleViewModel model)
+        public async Task<IActionResult> Edit(RoleViewModel model)
         {
-            if(ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var role = _roleRepository.FindByIdAsync(model.Id).Result;
-                if(role!=null)
-                {
-                    role.Name = model.Name;
-                    var result = _roleRepository.UpdateAsync(role).Result;
-                    if(result.Succeeded)
-                    {
-                        return RedirectToAction(nameof(Index));
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
-                            ModelState.AddModelError("", error.Description);
-                    }
-                }
+                return View(model);
             }
+
+            var role = await _roleManager.FindByIdAsync(model.Id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+
+            role.Name = model.Name;
+            var result = await _roleManager.UpdateAsync(role);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
             return View(model);
         }
 
-
-
-
+        // Adds cart item count to ViewBag for all actions
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            var cart = HttpContext.Session.Get<ShoppingCart>("Cart") ?? new ShoppingCart();
+            ViewBag.CartItemCount = cart.TotalQuantity;
+            base.OnActionExecuting(context);
+        }
     }
 }

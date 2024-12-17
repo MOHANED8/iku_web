@@ -5,6 +5,7 @@ using E_Commmerce.Models;
 using E_Commmerce.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NuGet.Packaging.Core;
 using System.ComponentModel.DataAnnotations;
@@ -203,8 +204,14 @@ namespace E_Commmerce.Controllers
             return View(categoryViews);
         }
 
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            var cart = HttpContext.Session.Get<ShoppingCart>("Cart") ?? new ShoppingCart();
+            ViewBag.CartItemCount = cart.TotalQuantity;
+            base.OnActionExecuting(context);
+        }
 
-        
-        
+
+
     }
 }
