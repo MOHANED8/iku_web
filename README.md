@@ -1,4 +1,4 @@
-## ASP.NET Core MVC E-Commerce Application
+## ASP.NET Core MVC BUYTOPIA Application
 
 ### **Overview**
 This modern and feature-rich ASP.NET Core MVC e-commerce application allows users to register, log in, browse products and categories, and manage their profile details. Administrators have enhanced capabilities, including managing products, categories, and user accounts.
