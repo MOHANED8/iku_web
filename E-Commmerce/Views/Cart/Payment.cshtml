@@ -1,4 +1,5 @@
 ﻿@model ShoppingCart
+<<<<<<< HEAD
 
 <div class="container mt-5">
     <h2>Payment</h2>
@@ -23,6 +24,43 @@
             <input type="text" id="cvv" name="cvv" class="form-control" placeholder="123" required />
         </div>
 
+=======
+<!-- Specifies that the view expects a ShoppingCart model -->
+
+<div class="container mt-5">
+    <h2>Payment</h2> <!-- Page heading for payment section -->
+    <!-- Form for processing the payment -->
+    <form asp-action="ProcessPayment" asp-controller="Cart" method="post">
+        <!-- Cardholder Name input -->
+        <div class="mb-3">
+            <label for="cardName" class="form-label">Cardholder Name</label>
+            <input type="text" id="cardName" name="cardName" class="form-control" placeholder="Enter the name on your card" required />
+            <!-- Display a label and input field for cardholder name -->
+        </div>
+
+        <!-- Card Number input -->
+        <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX" required />
+            <!-- Display a label and input field for card number with a placeholder format -->
+        </div>
+
+        <!-- Expiry Date input -->
+        <div class="mb-3">
+            <label for="expiryDate" class="form-label">Expiry Date</label>
+            <input type="text" id="expiryDate" name="expiryDate" class="form-control" placeholder="MM/YY" required />
+            <!-- Display a label and input field for the card's expiry date -->
+        </div>
+
+        <!-- CVV input -->
+        <div class="mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" id="cvv" name="cvv" class="form-control" placeholder="123" required />
+            <!-- Display a label and input field for the CVV code -->
+        </div>
+
+        <!-- Submit button to confirm payment -->
+>>>>>>> 69e884f (Initial project upload)
         <div class="mb-3 text-end">
             <button type="submit" class="btn btn-success">Confirm Payment</button>
         </div>

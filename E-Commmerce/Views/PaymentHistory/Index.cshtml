@@ -1,15 +1,27 @@
 ﻿@model List<E_Commmerce.Models.PaymentHistory>
+<<<<<<< HEAD
 
 <div class="container mt-5">
     <h2>Order History</h2>
     @if (!Model.Any())
     {
         <p>You have no order history.</p>
+=======
+<!-- Specifies that the view expects a list of PaymentHistory objects -->
+
+<div class="container mt-5">
+    <h2>Order History</h2> <!-- Page heading -->
+    @if (!Model.Any())
+    {
+        <!-- Check if the order history is empty -->
+        <p>You have no order history.</p> <!-- Message displayed when there are no orders -->
+>>>>>>> 69e884f (Initial project upload)
     }
     else
     {
         @foreach (var payment in Model)
         {
+<<<<<<< HEAD
             <div class="card mb-3">
                 <div class="card-header">
                     <h5>Order Date: @payment.PaymentDate.ToString("f")</h5>
@@ -23,16 +35,46 @@
                                 <th>Price</th>
                                 <th>Quantity</th>
                                 <th>Subtotal</th>
+=======
+            <!-- Loop through each payment/order in the order history -->
+            <div class="card mb-3">
+                <!-- Bootstrap card to display each order -->
+                <div class="card-header">
+                    <!-- Display the order date and format it as "f" (full date/time) -->
+                    <h5>Order Date: @payment.PaymentDate.ToString("f")</h5>
+                    <!-- Display the total price of the order -->
+                    <p>Total Price: <strong>@payment.TotalPrice</strong> L.E</p>
+                </div>
+                <div class="card-body">
+                    <!-- Table to display the items in the order -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th> <!-- Column header for product name -->
+                                <th>Price</th> <!-- Column header for product price -->
+                                <th>Quantity</th> <!-- Column header for quantity -->
+                                <th>Subtotal</th> <!-- Column header for subtotal -->
+>>>>>>> 69e884f (Initial project upload)
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var item in payment.Items)
                             {
+<<<<<<< HEAD
                                 <tr>
                                     <td>@item.ProductName</td>
                                     <td>@item.Price</td>
                                     <td>@item.Quantity</td>
                                     <td>@(item.Price * item.Quantity)</td>
+=======
+                                <!-- Loop through each item in the current order -->
+                                <tr>
+                                    <!-- Display product details in table rows -->
+                                    <td>@item.ProductName</td> <!-- Product name -->
+                                    <td>@item.Price</td> <!-- Product price -->
+                                    <td>@item.Quantity</td> <!-- Quantity purchased -->
+                                    <td>@(item.Price * item.Quantity)</td> <!-- Subtotal calculation -->
+>>>>>>> 69e884f (Initial project upload)
                                 </tr>
                             }
                         </tbody>
@@ -42,3 +84,7 @@
         }
     }
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69e884f (Initial project upload)

@@ -1,6 +1,7 @@
-﻿@model RoleViewModel
+﻿@model RoleViewModel // Specifies that the view expects a model of type RoleViewModel
 
 @{
+<<<<<<< HEAD
     ViewData["Title"] = "Edit Role";
 }
 
@@ -9,17 +10,49 @@
 <div class="row">
     <div class="col-md-6">
         <form asp-action="Edit" method="post">
+=======
+    ViewData["Title"] = "Edit Role"; // Sets the page title to "Edit Role"
+}
+
+<h1>Edit Role</h1> <!-- Page heading -->
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- Form for editing a role -->
+        <form asp-action="Edit" method="post">
+            <!-- Displays a summary of validation errors at the top of the form -->
+>>>>>>> 69e884f (Initial project upload)
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Hidden input to store the Role ID (used for editing) -->
             <input type="hidden" asp-for="Id" />
 
+<<<<<<< HEAD
+=======
+            <!-- Input field for the role name -->
+>>>>>>> 69e884f (Initial project upload)
             <div class="form-group">
+                <!-- Label for the Name property -->
                 <label asp-for="Name" class="control-label"></label>
+
+                <!-- Input field bound to the Name property of the RoleViewModel -->
                 <input asp-for="Name" class="form-control" />
+
+                <!-- Validation message for the Name property -->
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
+<<<<<<< HEAD
             <div class="form-group">
                 <button type="submit" class="btn btn-primary mt-2">Save</button>
+=======
+            <!-- Form buttons -->
+            <div class="form-group">
+                <!-- Submit button to save changes -->
+                <button type="submit" class="btn btn-primary mt-2">Save</button>
+
+                <!-- Cancel button to navigate back to the Index view -->
+>>>>>>> 69e884f (Initial project upload)
                 <a asp-action="Index" class="btn btn-secondary mt-2">Cancel</a>
             </div>
         </form>
@@ -28,6 +61,10 @@
 
 @section Scripts {
     @{
+<<<<<<< HEAD
+=======
+        // Renders the validation scripts partial for client-side validation
+>>>>>>> 69e884f (Initial project upload)
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }

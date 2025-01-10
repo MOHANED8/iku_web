@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\views\\account\\_changephoto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\views\\account\\_changephoto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,14 +14,25 @@
     {
       "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\viewmodels\\user\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\viewmodels\\user\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 69e884f (Initial project upload)
     },
     {
       "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< HEAD
     },
     {
       "AbsoluteMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|c:\\users\\lenovo\\desktop\\new folder\\e-commmerce\\e-commmerce\\data\\migrations\\20241217141943_kopad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{754589EF-340F-4712-A86B-0B24AF5A0B62}|E-Commmerce\\E-Commmerce.csproj|solutionrelative:e-commmerce\\data\\migrations\\20241217141943_kopad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+>>>>>>> 69e884f (Initial project upload)
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -43,10 +56,26 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-17T16:11:52.578Z",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\ViewModels\\User\\CreateUserViewModel.cs",
+              "RelativeDocumentMoniker": "E-Commmerce\\ViewModels\\User\\CreateUserViewModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\ViewModels\\User\\CreateUserViewModel.cs",
+              "RelativeToolTip": "E-Commmerce\\ViewModels\\User\\CreateUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T13:48:56.047Z",
+>>>>>>> 69e884f (Initial project upload)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "_ChangePhoto.cshtml",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Views\\Account\\_ChangePhoto.cshtml",
@@ -56,11 +85,23 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-17T16:11:48.169Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "E-Commmerce\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Models\\Category.cs",
+              "RelativeToolTip": "E-Commmerce\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T13:48:49.15Z",
+>>>>>>> 69e884f (Initial project upload)
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Models\\Product.cs",
               "RelativeDocumentMoniker": "E-Commmerce\\Models\\Product.cs",
@@ -74,11 +115,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+=======
+>>>>>>> 69e884f (Initial project upload)
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Program.cs",
               "RelativeDocumentMoniker": "E-Commmerce\\Program.cs",
               "ToolTip": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\Program.cs",
               "RelativeToolTip": "E-Commmerce\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAFEAAAAAAAAAAAAowF8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T15:38:35.883Z",
@@ -95,6 +139,11 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T14:19:43.918Z",
+=======
+              "ViewState": "AgIAAGgAAAAAAAAAAAAwwG4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T22:19:31.484Z",
+>>>>>>> 69e884f (Initial project upload)
               "EditorCaption": ""
             }
           ]

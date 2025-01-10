@@ -1,12 +1,13 @@
 ﻿@model UserLoginViewModel
-
+<!-- Specifies that the view expects a UserLoginViewModel object -->
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Login"; // Sets the page title to "Login"
 }
 
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
+<<<<<<< HEAD
             <div class="card shadow">
                 <div class="card-header bg-primary text-white text-center">
                     <h3>Login</h3>
@@ -32,6 +33,44 @@
                 </div>
                 <div class="card-footer text-center">
                     <a class="link-primary" asp-action="ForgetPassword">Forgot Password?</a>
+=======
+            <!-- Card for the login form -->
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Login</h3> <!-- Heading for the login form -->
+                </div>
+                <div class="card-body">
+                    <!-- Login form -->
+                    <form asp-action="Login">
+                        <!-- Display validation errors -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Email input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="form-label"></label> <!-- Label for Email -->
+                            <input asp-for="Email" class="form-control" /> <!-- Input field for Email -->
+                            <span asp-validation-for="Email" class="text-danger"></span> <!-- Validation error for Email -->
+                        </div>
+
+                        <!-- Password input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="form-label"></label> <!-- Label for Password -->
+                            <input asp-for="Password" type="password" class="form-control" /> <!-- Input field for Password -->
+                            <span asp-validation-for="Password" class="text-danger"></span> <!-- Validation error for Password -->
+                        </div>
+
+                        <!-- Submit button for login and a link to register -->
+                        <div class="d-grid gap-2">
+                            <input type="submit" value="Login" class="btn btn-primary" /> <!-- Login button -->
+                            <a asp-action="Register" class="btn btn-outline-secondary">Create New Account</a> <!-- Link to registration page -->
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Forgot password link in the card footer -->
+                <div class="card-footer text-center">
+                    <a class="link-primary" asp-action="ForgetPassword">Forgot Password?</a> <!-- Link to forgot password page -->
+>>>>>>> 69e884f (Initial project upload)
                 </div>
             </div>
         </div>
@@ -39,6 +78,10 @@
 </div>
 
 @section Scripts {
+<<<<<<< HEAD
+=======
+    <!-- Include client-side validation scripts -->
+>>>>>>> 69e884f (Initial project upload)
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

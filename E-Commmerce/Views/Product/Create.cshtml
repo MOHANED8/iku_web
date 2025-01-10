@@ -1,38 +1,53 @@
-﻿@model ProductViewModel
+﻿@model ProductViewModel // Specifies that the view expects a ProductViewModel object
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create"; // Sets the page title to "Create"
 }
 
-<h1>Create Product </h1>
+<h1>Create Product</h1> <!-- Page heading -->
 
-<hr />
+<hr /> <!-- Horizontal line for separation -->
+
 <div class="row">
     <div class="col-md-4">
+        <!-- Form to create a new product -->
         <form method="post" asp-action="Create">
+            <!-- Submits form data to the Create action -->
+            <!-- Validation summary for displaying model-level errors -->
             <div asp-validation-summary="All" class="text-danger"></div>
+
+            <!-- Input field for product name -->
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Name" class="control-label"></label> <!-- Label for Name -->
+                <input asp-for="Name" class="form-control" /> <!-- Input for Name -->
+                <span asp-validation-for="Name" class="text-danger"></span> <!-- Validation for Name -->
             </div>
+
+            <!-- Input field for product price -->
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
+                <label asp-for="Price" class="control-label"></label> <!-- Label for Price -->
+                <input asp-for="Price" class="form-control" /> <!-- Input for Price -->
+                <span asp-validation-for="Price" class="text-danger"></span> <!-- Validation for Price -->
             </div>
+
+            <!-- Input field for product description -->
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
+                <label asp-for="Description" class="control-label"></label> <!-- Label for Description -->
+                <input asp-for="Description" class="form-control" /> <!-- Input for Description -->
+                <span asp-validation-for="Description" class="text-danger"></span> <!-- Validation for Description -->
             </div>
+
+            <!-- Dropdown for selecting a category -->
             <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
+                <label asp-for="CategoryId" class="control-label"></label> <!-- Label for CategoryId -->
                 <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
-                    <option value="">-- Select Category --</option>
+                    <!-- Dropdown bound to CategoryId -->
+                    <option value="">-- Select Category --</option> <!-- Placeholder option -->
                 </select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                <span asp-validation-for="CategoryId" class="text-danger"></span> <!-- Validation for CategoryId -->
             </div>
+
+            <!-- Submit button -->
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary mt-2" />
             </div>
@@ -40,10 +55,15 @@
     </div>
 </div>
 
+<!-- Back to List button -->
 <div>
     <a asp-action="Index" class="btn btn-secondary mt-2">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <!-- Include validation scripts for client-side validation -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+

@@ -1,13 +1,22 @@
-﻿@model ProductImage
+﻿@model ProductImage // Specifies that the view expects a ProductImage model
+
+<!-- Form to upload and change the product image -->
 <form method="post" asp-controller="Product" asp-action="ChangePhoto" enctype="multipart/form-data">
+    <!-- Input group for file upload -->
     <div class="input-group-sm">
+        <!-- Hidden input to store the product ID -->
         <input hidden asp-for="Id" value="@Model.Id" />
+
+        <!-- File input field for selecting the new image -->
         <input asp-for="Image" type="file" class="form-control" />
+
+        <!-- Submit button to upload and change the image -->
         <button type="submit" class="btn btn-primary mt-2">Change Image</button>
     </div>
 </form>
 
 @section Scripts {
+    <!-- Include validation scripts for client-side validation -->
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

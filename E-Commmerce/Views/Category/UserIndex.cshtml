@@ -1,34 +1,67 @@
 ﻿@model PageList<CategoryViewModel>
-
+<!-- Specifies that the view expects a paginated list of CategoryViewModel objects -->
 @{
-    ViewBag.Title = "Categories";
+    ViewBag.Title = "Categories"; // Sets the page title to "Categories"
 }
 
-@foreach(var item in Model)
-{
-    <div class="card card-subtitle">
-        <div class="card-img">
-            <img src="/CategoryImages/@item.ImageViewModel.ImageName" width="20%" class="rounded-3">
-        </div>
-        <div class="card-header">
-            <h3>   @item.Name</h3>
-        </div>
-        <div class="card-body">
-            <p>  @item.Description</p>
-        </div>
-        <div class="card-footer">
-            <a class="btn btn-primary" asp-controller="Product" asp-action="ListByCategory" asp-route-CategoryId="@item.Id">Show All</a>
-        </div>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <!-- Loop through each category in the model -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg rounded">
+                    <!-- Card for displaying category details -->
+                    <div class="card-img-top text-center p-3">
+                        <!-- Display the category image -->
+                        <img src="/CategoryImages/@item.ImageViewModel.ImageName"
+                             alt="@item.Name"
+                             class="img-fluid rounded-3"
+                             style="max-height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <!-- Display the category name -->
+                        <h5 class="card-title text-center">@item.Name</h5>
+                        <!-- Display the category description -->
+                        <p class="card-text text-muted text-center">@item.Description</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <!-- Button to navigate to products in the category -->
+                        <a class="btn btn-outline-primary w-100"
+                           asp-controller="Product"
+                           asp-action="ListByCategory"
+                           asp-route-CategoryId="@item.Id">Show All</a>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
-    <hr />
-}
+</div>
 
-
+<!-- Styling for the cards and buttons -->
 <style>
-    hr{
-        border: 6px solid #002333;
-        border-radius: 010px;
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effect */
     }
+
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarge the card on hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add a shadow effect */
+        }
+
+    .card-title {
+        font-weight: bold; /* Bold text for the card title */
+    }
+
+    .btn-outline-primary {
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #002333; /* Change background color on hover */
+            color: #fff; /* Change text color on hover */
+        }
 </style>
 
+<!-- Render a partial view for pagination -->
 <partial name="_UserPagination" />

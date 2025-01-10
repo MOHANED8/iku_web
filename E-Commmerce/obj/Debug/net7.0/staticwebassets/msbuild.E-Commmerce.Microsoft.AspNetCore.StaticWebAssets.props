@@ -18,6 +18,63 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\buytopia.png'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Accessories.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/Accessories.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>s00til0bnq</Fingerprint>
+      <Integrity>pNSCDCbSK07EK3PVnEJkRfDcg9EPhO5ASXBWMq/gG60=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Accessories.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Beverages.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/Beverages.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ywowwwye70</Fingerprint>
+      <Integrity>IoZeNiHbSqsflDaQeA7LaMHb1vic2Nvoy+1hpU/y4/8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Beverages.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\ce0c7785438b8f59be044c255308a447.png_720x720q80.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/ce0c7785438b8f59be044c255308a447.png_720x720q80.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>697uxm8d90</Fingerprint>
+      <Integrity>xuYnyxpEE17P3neHk/H4DONByXLZK/sM9J4sEgwWu9k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\ce0c7785438b8f59be044c255308a447.png_720x720q80.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Defualt.png'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -48,8 +105,13 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>ne75yd9k8i</Fingerprint>
       <Integrity>QQUGX88jJwn2AejvBJk5FpIv7move75ML/+xyi77zSQ=</Integrity>
+=======
+      <Fingerprint>086mkc8o4k</Fingerprint>
+      <Integrity>AHPdKg6NPuGfeDTrW9ivpnA1JNlhTj9Np45Q1Tgjrxk=</Integrity>
+>>>>>>> 69e884f (Initial project upload)
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\download (1).jpeg'))</OriginalItemSpec>
@@ -66,12 +128,18 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>7m939bccb2</Fingerprint>
       <Integrity>kTe/FoUcUuWQIZU4rC6CbEnGzCOJsvYP3fbvy+cnK+E=</Integrity>
+=======
+      <Fingerprint>71gg4u3vf1</Fingerprint>
+      <Integrity>K2HbYiWMRFUtB/esbIcpx+EWhhErnJ0ea72KXh+uG4Y=</Integrity>
+>>>>>>> 69e884f (Initial project upload)
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\download (2).jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\download (3).jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -180,6 +248,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\download (8).jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\download.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -192,12 +262,74 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>l3kwl6b2cz</Fingerprint>
       <Integrity>wWpLFBoFGnJ02Jll79kL8crVyR5SLXSdo/9g1Tpe6JU=</Integrity>
+=======
+      <Fingerprint>awvb4fohpo</Fingerprint>
+      <Integrity>OlYDMnAD8jx6mk5CIqT9xDcly7ykKGZ77MGd7frWvoE=</Integrity>
+>>>>>>> 69e884f (Initial project upload)
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\download.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\e.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/e.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0muwurh116</Fingerprint>
+      <Integrity>+NyOYA0/oDh5UG1DW52flXe2UIKklLxf8SCL7cc3TD0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\e.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Furniture.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/Furniture.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0cdygy64hv</Fingerprint>
+      <Integrity>AFCDMmpdwOypka2iNx2aDdGMIiTeS4oePiGETa/JBak=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Furniture.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Garden.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/Garden.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cqtgrbo0tl</Fingerprint>
+      <Integrity>hIG/ag2eOWdiBvCVQe50HQESplFGKuw7seu/rgwuESs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Garden.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\General-Purpose-Application-Software.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -228,8 +360,13 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>2pru59dhqa</Fingerprint>
       <Integrity>tuBdmjnf4eweOADEKALeJpHF4rK86fhEj45cscx1/i4=</Integrity>
+=======
+      <Fingerprint>km78rw1tze</Fingerprint>
+      <Integrity>ZFzKVjnLtn+T4kPMnUPZREhQMYYqxjoB2w1yXCkRoNo=</Integrity>
+>>>>>>> 69e884f (Initial project upload)
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\images (1).jpeg'))</OriginalItemSpec>
@@ -246,12 +383,38 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>boayv80qs3</Fingerprint>
       <Integrity>dXZdcwi+uQLICor4kNa9T1SJo3l9DngxzPOs2Vo44sk=</Integrity>
+=======
+      <Fingerprint>l55i6ivzw7</Fingerprint>
+      <Integrity>mehXuaNKHtkaxXcEIMutuY3TVijh3SwitQvJJKAS2RA=</Integrity>
+>>>>>>> 69e884f (Initial project upload)
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\images.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>s15i7j6bu6</Fingerprint>
+      <Integrity>8GKoszN0EVOtQgmz6tJMIA9YiPSiQsKIsQeXQtWO/bM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\old-books-436498_1920.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -324,6 +487,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\product-default.png'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Shoes.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/Shoes.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xpw9yy34r1</Fingerprint>
+      <Integrity>5WdNpFaitP9bz4o5LCpFyKhC8bXHnGjlz+9Pha/11gw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Shoes.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\shopping-bag.png'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -378,6 +562,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\tom-hermans-9BoqXzEeQqM-unsplash.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Tools.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>CategoryImages/Tools.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>riht842f22</Fingerprint>
+      <Integrity>83XKc9GuQLB3iWlozLwjEwau8/FXS14HuX89+hSaNI4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\Tools.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CategoryImages\VF-Best-Accessories-2022-Lead.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -4176,6 +4381,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\Defualt.png'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\download (1).jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -4338,6 +4544,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\download.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\goal---web-two-way-split--bf53cc91-644a-42fb-b55c-f350c830a2e3.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -4356,6 +4564,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\goal---web-two-way-split--bf53cc91-644a-42fb-b55c-f350c830a2e3.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\images (1).jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -4392,6 +4601,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\images.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 69e884f (Initial project upload)
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png'))">
       <SourceType>Package</SourceType>
       <SourceId>E-Commmerce</SourceId>
@@ -4535,6 +4746,27 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UserProfileImages\Defualt.jpg'))</OriginalItemSpec>
+<<<<<<< HEAD
+=======
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UserProfileImages\wallpaperflare.com_wallpaper.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>E-Commmerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/E-Commmerce</BasePath>
+      <RelativePath>UserProfileImages/wallpaperflare.com_wallpaper.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dnim0i812s</Fingerprint>
+      <Integrity>6U/I4mKSn5lsdiP16wqfRJ2P9Rk5ZmYtrlLZERz73z8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\UserProfileImages\wallpaperflare.com_wallpaper.jpg'))</OriginalItemSpec>
+>>>>>>> 69e884f (Initial project upload)
     </StaticWebAsset>
   </ItemGroup>
 </Project>

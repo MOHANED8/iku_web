@@ -1,13 +1,22 @@
 ﻿@model CategoryImage
+<!-- Specifies that the view expects a CategoryImage model -->
+
 <form method="post" asp-controller="Category" asp-action="ChangePhoto" asp-route-PageNumber="@ViewBag.pageIndex" enctype="multipart/form-data">
+    <!-- Form for changing the category image -->
     <div class="input-group-sm">
+        <!-- Hidden input to store the category ID -->
         <input hidden asp-for="Id" value="@Model.Id" />
+
+        <!-- Input field for selecting an image file -->
         <input asp-for="Image" type="file" class="form-control" />
-        <button type="submit"  class="btn btn-primary mt-2">Change Image</button>
+
+        <!-- Submit button to upload the new image -->
+        <button type="submit" class="btn btn-primary mt-2">Change Image</button>
     </div>
 </form>
 
 @section Scripts {
+    <!-- Include client-side validation scripts -->
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

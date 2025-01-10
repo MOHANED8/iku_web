@@ -1,10 +1,15 @@
 ﻿@model ProfileViewModel
+<<<<<<< HEAD
+=======
+<!-- Specifies that the view expects a ProfileViewModel object -->
+>>>>>>> 69e884f (Initial project upload)
 
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card shadow">
                 <div class="card-header bg-primary text-white text-center">
+<<<<<<< HEAD
                     <h3>Profile</h3>
                 </div>
                 <div class="card-body text-center">
@@ -22,28 +27,81 @@
                     <form method="post" asp-action="Profile" enctype="multipart/form-data">
                         <div asp-validation-summary="All" class="text-danger mb-3"></div>
 
+=======
+                    <h3>Profile</h3> <!-- Title for the profile page -->
+                </div>
+                <div class="card-body text-center">
+                    <!-- Profile Image Section -->
+                    <div class="card-img mb-3">
+                        <!-- Display the user's profile image -->
+                        <img src="~/UserProfileImages/@Model.ImageName" class="rounded-circle" width="150px" alt="Profile Image" />
+                    </div>
+
+                    <!-- Remove Profile Image Button -->
+                    <a asp-action="RemovePhoto" class="btn btn-outline-danger mb-3">Remove Profile Image</a>
+                    <!-- Link to remove the user's profile image, triggers the RemovePhoto action -->
+                    <!-- Change Profile Image Section (Partial View) -->
+                    <partial name="_ChangePhoto" model="new UpdateImageViewModel()" />
+                    <!-- A partial view for allowing users to change their profile image -->
+                    <!-- Profile Update Form -->
+                    <form method="post" asp-action="Profile" enctype="multipart/form-data">
+                        <!-- Form for updating user profile details -->
+                        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+                        <!-- Displays validation errors, if any -->
+                        <!-- Email Input Field -->
+>>>>>>> 69e884f (Initial project upload)
                         <div class="form-group mb-3">
                             <label asp-for="Email" class="form-label"></label>
                             <input asp-for="Email" class="form-control" value="@Model.Email" />
                             <span asp-validation-for="Email" class="text-danger"></span>
+<<<<<<< HEAD
                         </div>
+=======
+                            <!-- Input for the user's email, pre-filled with current email. Validation error message will show below -->
+                        </div>
+
+                        <!-- Username Input Field -->
+>>>>>>> 69e884f (Initial project upload)
                         <div class="form-group mb-3">
                             <label asp-for="Username" class="form-label"></label>
                             <input asp-for="Username" class="form-control" value="@Model.Username" />
                             <span asp-validation-for="Username" class="text-danger"></span>
+<<<<<<< HEAD
                         </div>
+=======
+                            <!-- Input for the user's username, pre-filled with current username. Validation error message will show below -->
+                        </div>
+
+                        <!-- First Name Input Field -->
+>>>>>>> 69e884f (Initial project upload)
                         <div class="form-group mb-3">
                             <label asp-for="FirstName" class="form-label"></label>
                             <input asp-for="FirstName" class="form-control" value="@Model.FirstName" />
                             <span asp-validation-for="FirstName" class="text-danger"></span>
+<<<<<<< HEAD
                         </div>
+=======
+                            <!-- Input for the user's first name, pre-filled with current first name. Validation error message will show below -->
+                        </div>
+
+                        <!-- Last Name Input Field -->
+>>>>>>> 69e884f (Initial project upload)
                         <div class="form-group mb-3">
                             <label asp-for="LastName" class="form-label"></label>
                             <input asp-for="LastName" class="form-control" value="@Model.LastName" />
                             <span asp-validation-for="LastName" class="text-danger"></span>
+<<<<<<< HEAD
                         </div>
 
                         <button class="btn btn-primary">Update</button>
+=======
+                            <!-- Input for the user's last name, pre-filled with current last name. Validation error message will show below -->
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button class="btn btn-primary">Update</button>
+                        <!-- Button to submit the form and update the profile -->
+>>>>>>> 69e884f (Initial project upload)
                     </form>
                 </div>
             </div>
@@ -52,8 +110,12 @@
 </div>
 
 @section Scripts {
+    <!-- Include client-side validation scripts -->
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 69e884f (Initial project upload)

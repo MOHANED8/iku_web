@@ -1,18 +1,21 @@
-﻿@model ErrorViewModel
+﻿@model ErrorViewModel // Specifies that the view expects an ErrorViewModel
 @{
-    ViewData["Title"] = "Error";
+    ViewData["Title"] = "Error"; // Sets the page title for the error page
 }
 
+<!-- Display error title -->
 <h1 class="text-danger">Error.</h1>
 <h2 class="text-danger">An error occurred while processing your request.</h2>
 
+<!-- Conditionally display the Request ID if it's available -->
 @if (Model.ShowRequestId)
 {
     <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code> <!-- Displays the unique Request ID -->
     </p>
 }
 
+<!-- Information for Development Mode -->
 <h3>Development Mode</h3>
 <p>
     Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.

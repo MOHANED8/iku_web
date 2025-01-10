@@ -5,14 +5,47 @@
       "PackagePath": "staticwebassets\\E-Commmerce.9gmxq4x42r.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Accessories.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\Accessories.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Beverages.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\Beverages.jpeg"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Defualt.png",
       "PackagePath": "staticwebassets\\CategoryImages\\Defualt.png"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Furniture.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\Furniture.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Garden.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\Garden.jpeg"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\General-Purpose-Application-Software.jpg",
       "PackagePath": "staticwebassets\\CategoryImages\\General-Purpose-Application-Software.jpg"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Shoes.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\Shoes.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\Tools.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\Tools.jpeg"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\VF-Best-Accessories-2022-Lead.jpg",
       "PackagePath": "staticwebassets\\CategoryImages\\VF-Best-Accessories-2022-Lead.jpg"
     },
@@ -41,6 +74,13 @@
       "PackagePath": "staticwebassets\\CategoryImages\\XCM_Manual_1624674_5856194_379x304_1X._SY304_CB596011805_.jpg"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\ce0c7785438b8f59be044c255308a447.png_720x720q80.png",
+      "PackagePath": "staticwebassets\\CategoryImages\\ce0c7785438b8f59be044c255308a447.png_720x720q80.png"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\download (1).jpeg",
       "PackagePath": "staticwebassets\\CategoryImages\\download (1).jpeg"
     },
@@ -49,6 +89,7 @@
       "PackagePath": "staticwebassets\\CategoryImages\\download (2).jpeg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\download (3).jpeg",
       "PackagePath": "staticwebassets\\CategoryImages\\download (3).jpeg"
     },
@@ -73,10 +114,19 @@
       "PackagePath": "staticwebassets\\CategoryImages\\download (8).jpeg"
     },
     {
+=======
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\download.jpeg",
       "PackagePath": "staticwebassets\\CategoryImages\\download.jpeg"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\e.jpeg",
+      "PackagePath": "staticwebassets\\CategoryImages\\e.jpeg"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\images (1).jpeg",
       "PackagePath": "staticwebassets\\CategoryImages\\images (1).jpeg"
     },
@@ -85,6 +135,13 @@
       "PackagePath": "staticwebassets\\CategoryImages\\images.jpeg"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png",
+      "PackagePath": "staticwebassets\\CategoryImages\\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\CategoryImages\\old-books-436498_1920.jpg",
       "PackagePath": "staticwebassets\\CategoryImages\\old-books-436498_1920.jpg"
     },
@@ -145,6 +202,7 @@
       "PackagePath": "staticwebassets\\ProductImages\\daniel-korpai-hbTKIbuMmBI-unsplash.jpg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\ProductImages\\download (1).jpeg",
       "PackagePath": "staticwebassets\\ProductImages\\download (1).jpeg"
     },
@@ -181,10 +239,13 @@
       "PackagePath": "staticwebassets\\ProductImages\\download.jpeg"
     },
     {
+=======
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\ProductImages\\goal---web-two-way-split--bf53cc91-644a-42fb-b55c-f350c830a2e3.jpeg",
       "PackagePath": "staticwebassets\\ProductImages\\goal---web-two-way-split--bf53cc91-644a-42fb-b55c-f350c830a2e3.jpeg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\ProductImages\\images (1).jpeg",
       "PackagePath": "staticwebassets\\ProductImages\\images (1).jpeg"
     },
@@ -193,6 +254,8 @@
       "PackagePath": "staticwebassets\\ProductImages\\images.jpeg"
     },
     {
+=======
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\ProductImages\\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png",
       "PackagePath": "staticwebassets\\ProductImages\\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png"
     },
@@ -213,6 +276,13 @@
       "PackagePath": "staticwebassets\\UserProfileImages\\Defualt.jpg"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\UserProfileImages\\wallpaperflare.com_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\UserProfileImages\\wallpaperflare.com_wallpaper.jpg"
+    },
+    {
+>>>>>>> 69e884f (Initial project upload)
       "Id": "C:\\Users\\lenovo\\Desktop\\New folder\\E-Commmerce\\E-Commmerce\\wwwroot\\buytopia.png",
       "PackagePath": "staticwebassets\\buytopia.png"
     },

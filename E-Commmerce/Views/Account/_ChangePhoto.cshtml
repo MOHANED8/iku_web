@@ -1,15 +1,28 @@
 ﻿@model UpdateImageViewModel
+<!-- Specifies that the view expects an UpdateImageViewModel object -->
+
 <form method="post" asp-controller="Account" asp-action="UpdatePhoto" enctype="multipart/form-data">
+    <!-- Form for updating the profile picture -->
     <div asp-validation-summary="All"></div>
+    <!-- Displays validation errors, if any, for the entire form -->
+
     <label asp-for="Image" class="form-label md-2">Update Profile Picture</label>
+    <!-- Label for the image upload field -->
+
     <div class="input-group">
-        <input asp-for="Image" type="file" class="form-control" />
+        <!-- Input field for selecting an image file -->
+        <input asp-for="Image" type="file" class="form-control" /> <!-- File input for the profile picture -->
+
         <span asp-validation-for="Image"></span>
+        <!-- Validation error message for the image field if there are any issues (e.g., file type or size) -->
+
         <button type="submit" class="btn btn-primary">Change Profile Image</button>
+        <!-- Submit button to submit the form and change the profile image -->
     </div>
 </form>
 
 @section Scripts {
+    <!-- Includes client-side validation scripts to handle validation before form submission -->
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

@@ -1,54 +1,63 @@
 ﻿@model PageList<CategoryViewModel>
-
+<!-- Specifies that the view expects a paginated list of CategoryViewModel objects -->
 @{
-    ViewBag.Title = "All Cateigories";
+    ViewBag.Title = "All Categories"; // Sets the page title to "All Categories"
 }
 
+<h2>All Categories</h2> <!-- Page heading -->
 
-
-<h2>All Categories</h2>
 <p>
+    <!-- Button to navigate to the Create action -->
     <a asp-action="Create" class="btn btn-success">Create New</a>
 </p>
 
-
-
+<!-- Table to display categories -->
 <table class="table table-bordered text-md-center align-middle">
     <thead>
-        <th>#</th>
-        <th>Category Name </th>
-        <th>Description</th>
-        <th>Category Image</th>
-        <th>Actions</th>
+    <th>#</th> <!-- Column for serial number -->
+    <th>Category Name</th> <!-- Column for category name -->
+    <th>Description</th> <!-- Column for category description -->
+    <th>Category Image</th> <!-- Column for category image -->
+    <th>Actions</th> <!-- Column for action buttons -->
     </thead>
     <tbody>
-        @for(int i = 0;i<Model.Count();i++)
+        @for (int i = 0; i < Model.Count(); i++)
         {
-            
+            <!-- Loop through each category in the model -->
             <tr>
-                <td>@(i+1)</td>
+                <td>@(i + 1)</td> <!-- Display the serial number -->
                 <td>
-                    <h4 class="header">@Model[i].Name </h4>
-                   @if(Model[i].ProductsCount == 0)
+                    <h4 class="header">@Model[i].Name</h4> <!-- Display the category name -->
+                    @if (Model[i].ProductsCount == 0)
                     {
+                        <!-- Display "Empty" if no products in the category -->
                         <span class="paragraph">Empty</span>
                     }
                     else
                     {
+                        <!-- Display the number of products in the category -->
                         <span class="paragraph">@Model[i].ProductsCount</span>
                     }
                 </td>
-                <td>@Model[i].Description</td>
-                <td><img src="/CategoryImages/@Model[i]?.ImageViewModel?.ImageName" width="150px" class="rounded" /></td>
+                <td>@Model[i].Description</td> <!-- Display the category description -->
                 <td>
+                    <!-- Display the category image -->
+                    <img src="/CategoryImages/@Model[i]?.ImageViewModel?.ImageName" width="150px" class="rounded" />
+                </td>
+                <td>
+                    <!-- Action buttons -->
+                    <!-- Delete button with confirmation -->
                     <a class="btn btn-danger"
                        asp-action="Delete" asp-route-Id=@Model[i].Id asp-route-PageNumber="@Model.PageIndex"
                        onclick="return confirm('Are You Sure To Delete')">Delete</a>
-                       |
+                    |
+                    <!-- Edit button -->
                     <a asp-action="Edit" asp-route-Id="@Model[i].Id" asp-route-PageNumber="@Model.PageIndex" class="btn btn-secondary">Edit</a>
-                       |
-                    <a asp-action="Details" asp-route-Id="@Model[i].Id"  class="btn btn-info text-white">Details</a>
-                       |
+                    |
+                    <!-- Details button -->
+                    <a asp-action="Details" asp-route-Id="@Model[i].Id" class="btn btn-info text-white">Details</a>
+                    |
+                    <!-- Show All button -->
                     <a asp-action="ShowAll" asp-route-CategoryId="@Model[i].Id" class="btn btn-dark text-white">Show All</a>
                 </td>
             </tr>
@@ -56,17 +65,20 @@
     </tbody>
 </table>
 
+<!-- Render a partial view for pagination -->
 <partial name="_Pagination" />
 
+<!-- Custom styles -->
 <style>
-    .paragraph{
-        background-color: #363432;
-        color: white;
-        padding: 4px 8px;
-        text-align: center;
-        border-radius: 5px;
+    .paragraph {
+        background-color: #363432; /* Dark background color */
+        color: white; /* White text color */
+        padding: 4px 8px; /* Padding inside the element */
+        text-align: center; /* Center-align text */
+        border-radius: 5px; /* Rounded corners */
     }
-    .header{
-        display:inline-block;
+
+    .header {
+        display: inline-block; /* Display the header inline */
     }
 </style>
