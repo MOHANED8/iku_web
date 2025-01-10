@@ -1,21 +1,30 @@
 ﻿@model CategoryViewModel
+<!-- Specifies that the view expects a CategoryViewModel object -->
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Details"; // Sets the page title to "Details"
 }
 
+<!-- Category details section -->
 <div class="card-group">
     <div class="card-img">
+        <!-- Display the category image -->
         <img src="/CategoryImages/@Model.ImageViewModel.ImageName" width="200px" />
     </div>
+
     <div class="card-header">
+        <!-- Display the category name -->
         <h3>@Model.Name</h3>
     </div>
+
     <div class="card-body">
+        <!-- Display the category description -->
         <p class="card-text">Description: @Model.Description</p>
+        <!-- Display the number of products in stock for the category -->
         <p class="card-text">In Stock: @Model?.ProductsCount</p>
     </div>
+
     <div>
+        <!-- Back to the category list -->
         <a asp-action="Index" class="btn btn-secondary m-3">Back to List</a>
     </div>
-
 </div>

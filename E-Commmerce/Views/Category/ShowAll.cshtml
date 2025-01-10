@@ -1,52 +1,68 @@
 ﻿@model List<Product>
-
+<!-- Specifies that the view expects a list of Product objects -->
 @{
-    ViewBag.Title = "ShowAll";
+    ViewBag.Title = "ShowAll"; // Sets the page title to "ShowAll"
 }
-@if(Model.Count!=0)
+
+<!-- Conditional Heading -->
+@if (Model.Count != 0)
 {
-    <h2 class="mb-3">@ViewBag.CatName || (@Model.Count) In the Stock</h2>
+    <h2 class="mb-3">
+        @ViewBag.CatName || (@Model.Count) In the Stock
+    </h2>
+    <!-- Display the category name and the count of products in stock -->
 }
 else
 {
     <h2 class="mb-3">No Product In The Stock</h2>
+    <!-- Display a message if no products are available -->
 }
 
+<!-- Search Form -->
 <form method="post" asp-action="ShowAll">
     <div class="input-group mb-3">
+        <!-- Input field for the search term -->
         <input type="text" class="form-control" id="myInput" placeholder="Search" name="term" aria-label="Recipient's username" aria-describedby="button-addon2">
         <div class="input-group-append">
+            <!-- Search button with category ID as a route parameter -->
             <button class="btn btn-outline-secondary" type="submit" asp-route-catId="@ViewBag.CatId">Search</button>
         </div>
     </div>
 </form>
 
-
-@foreach(var product in Model)
+<!-- Loop through each product in the model -->
+@foreach (var product in Model)
 {
     <div class="card">
+        <!-- Card for displaying product details -->
         <div class="card-header">
-            <h3>@product.Name</h3>
+            <h3>@product.Name</h3> <!-- Display product name -->
         </div>
         <div class="card-body">
-            <p>@product.Description</p>
-            <p>@product.Price</p>
-            <p>@product?.Category?.Name</p>
+            <p>@product.Description</p> <!-- Display product description -->
+            <p>@product.Price</p> <!-- Display product price -->
+            <p>@product?.Category?.Name</p> <!-- Display category name if available -->
         </div>
-<div class="card-footer">
+        <div class="card-footer">
+            <!-- Details button -->
             <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn btn-info text-white">Details</a>
+            <!-- Edit button -->
             <a asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" class="btn btn-secondary">Edit</a>
+            <!-- Delete button with confirmation -->
             <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger" onclick="return confirm('Are You Sure To Delete')">Delete</a>
+        </div>
     </div>
-</div>
-    <hr />
+    <hr /> <!-- Separator between products -->
 }
 
-
+<!-- Back to List button -->
 <div>
     <a asp-action="Index" class="btn btn-secondary mt-2">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <!-- Include validation scripts for client-side validation -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

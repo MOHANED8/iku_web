@@ -1,4 +1,5 @@
 wwwroot\buytopia.png
+<<<<<<< HEAD
 wwwroot\CategoryImages\Defualt.png
 wwwroot\CategoryImages\download (1).jpeg
 wwwroot\CategoryImages\download (2).jpeg
@@ -12,13 +13,37 @@ wwwroot\CategoryImages\download.jpeg
 wwwroot\CategoryImages\General-Purpose-Application-Software.jpg
 wwwroot\CategoryImages\images (1).jpeg
 wwwroot\CategoryImages\images.jpeg
+=======
+wwwroot\CategoryImages\Accessories.jpeg
+wwwroot\CategoryImages\Beverages.jpeg
+wwwroot\CategoryImages\ce0c7785438b8f59be044c255308a447.png_720x720q80.png
+wwwroot\CategoryImages\Defualt.png
+wwwroot\CategoryImages\download (1).jpeg
+wwwroot\CategoryImages\download (2).jpeg
+wwwroot\CategoryImages\download.jpeg
+wwwroot\CategoryImages\e.jpeg
+wwwroot\CategoryImages\Furniture.jpeg
+wwwroot\CategoryImages\Garden.jpeg
+wwwroot\CategoryImages\General-Purpose-Application-Software.jpg
+wwwroot\CategoryImages\images (1).jpeg
+wwwroot\CategoryImages\images.jpeg
+wwwroot\CategoryImages\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png
+>>>>>>> 69e884f (Initial project upload)
 wwwroot\CategoryImages\old-books-436498_1920.jpg
 wwwroot\CategoryImages\pexels-harsch-shivam-2007647.jpg
 wwwroot\CategoryImages\photo_9804de1e-a58e-451d-a950-cf1cc1b85b82.jpg
 wwwroot\CategoryImages\product-default.png
+<<<<<<< HEAD
 wwwroot\CategoryImages\shopping-bag.png
 wwwroot\CategoryImages\shopping-cart.png
 wwwroot\CategoryImages\tom-hermans-9BoqXzEeQqM-unsplash.jpg
+=======
+wwwroot\CategoryImages\Shoes.jpeg
+wwwroot\CategoryImages\shopping-bag.png
+wwwroot\CategoryImages\shopping-cart.png
+wwwroot\CategoryImages\tom-hermans-9BoqXzEeQqM-unsplash.jpg
+wwwroot\CategoryImages\Tools.jpeg
+>>>>>>> 69e884f (Initial project upload)
 wwwroot\CategoryImages\VF-Best-Accessories-2022-Lead.jpg
 wwwroot\CategoryImages\wallpaperflare.com_wallpaper.jpg
 wwwroot\CategoryImages\XCM_Manual_1346198_1765818_Egypt_1336653_SR_EG_DBSingle_PersonalCare_1x_3953512_379x304_en_AE._SY304_CB662811665_.jpg
@@ -229,6 +254,7 @@ wwwroot\ProductImages\81lrfL9cgaL._AC_UF1000,1000_QL80_.jpg
 wwwroot\ProductImages\ce0c7785438b8f59be044c255308a447.png_720x720q80.png
 wwwroot\ProductImages\daniel-korpai-hbTKIbuMmBI-unsplash.jpg
 wwwroot\ProductImages\Defualt.png
+<<<<<<< HEAD
 wwwroot\ProductImages\download (1).jpeg
 wwwroot\ProductImages\download (2).jpeg
 wwwroot\ProductImages\download (3).jpeg
@@ -241,6 +267,9 @@ wwwroot\ProductImages\download.jpeg
 wwwroot\ProductImages\goal---web-two-way-split--bf53cc91-644a-42fb-b55c-f350c830a2e3.jpeg
 wwwroot\ProductImages\images (1).jpeg
 wwwroot\ProductImages\images.jpeg
+=======
+wwwroot\ProductImages\goal---web-two-way-split--bf53cc91-644a-42fb-b55c-f350c830a2e3.jpeg
+>>>>>>> 69e884f (Initial project upload)
 wwwroot\ProductImages\lenovo-laptop-thinkpad-l15-gen-2-15-amd-subseries-hero.png
 wwwroot\ProductImages\photo_9804de1e-a58e-451d-a950-cf1cc1b85b82.jpg
 wwwroot\ProductImages\shopping-cart.png
@@ -249,3 +278,7 @@ wwwroot\shopping-bag.png
 wwwroot\shopping-cart.png
 wwwroot\UserProfileImages\12111.png
 wwwroot\UserProfileImages\Defualt.jpg
+<<<<<<< HEAD
+=======
+wwwroot\UserProfileImages\wallpaperflare.com_wallpaper.jpg
+>>>>>>> 69e884f (Initial project upload)

@@ -8,10 +8,34 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/E_Commmerce.styles.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+<<<<<<< HEAD
 
+=======
+    <style>
+        /* Ensure the footer stays at the bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1; /* Ensures the footer stays at the bottom */
+        }
+
+        footer {
+            padding: 5px 0; /* Minimal padding */
+            font-size: 12px; /* Smaller font size */
+            text-align: center; /* Center the text */
+            background-color: #f8f9fa; /* Optional: Background color for footer */
+            border-top: 1px solid #dee2e6; /* Subtle top border */
+        }
+    </style>
+>>>>>>> 69e884f (Initial project upload)
 </head>
 <body>
-   <partial name="_NavBar" />
+    <partial name="_NavBar" />
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

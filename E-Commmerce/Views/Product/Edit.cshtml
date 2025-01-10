@@ -1,50 +1,69 @@
-﻿@model ProductViewModel
+﻿@model ProductViewModel // Specifies that the view expects a ProductViewModel object
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit"; // Sets the page title to "Edit"
 }
 
-<h1>Edit Product </h1>
+<h1>Edit Product </h1> <!-- Page heading -->
 @{
-    var imge = Model.ImageViewModel.ImageName;
+    var imge = Model.ImageViewModel.ImageName; // Retrieves the current image name from the model
 }
 
 @{
+    // Creates a new UpdateImageViewModel object with the current image name
     var savedImage = new UpdateImageViewModel() { ImageName = Model.ImageViewModel.ImageName };
 }
 
+<!-- Display the current product image -->
 <img src="/ProductImages/@Model.ImageViewModel.ImageName" width="200px" />
 
+<!-- Render partial view for changing the product image -->
 <partial name="_ChangeProductForm" model="new ProductImage(){Id=Model.Id}" />
 
-<hr />
+<hr /> <!-- Horizontal line for separation -->
+
 <div class="row">
     <div class="col-md-4">
+        <!-- Form for editing product details -->
         <form asp-action="Edit">
+            <!-- Displays validation errors for the entire model -->
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Hidden input for the product ID -->
             <input type="hidden" asp-for="Id" value="@Model.Id" />
+
+            <!-- Input field for product name -->
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Name" class="control-label"></label> <!-- Label for Name -->
+                <input asp-for="Name" class="form-control" /> <!-- Input for Name -->
+                <span asp-validation-for="Name" class="text-danger"></span> <!-- Validation for Name -->
             </div>
+
+            <!-- Input field for product price -->
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
+                <label asp-for="Price" class="control-label"></label> <!-- Label for Price -->
+                <input asp-for="Price" class="form-control" /> <!-- Input for Price -->
+                <span asp-validation-for="Price" class="text-danger"></span> <!-- Validation for Price -->
             </div>
+
+            <!-- Input field for product description -->
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
+                <label asp-for="Description" class="control-label"></label> <!-- Label for Description -->
+                <input asp-for="Description" class="form-control" /> <!-- Input for Description -->
+                <span asp-validation-for="Description" class="text-danger"></span> <!-- Validation for Description -->
             </div>
+
+            <!-- Dropdown for selecting a category -->
             <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
+                <label asp-for="CategoryId" class="control-label"></label> <!-- Label for CategoryId -->
                 <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
-                    <option value="" >-- Select Category --</option>
+                    <!-- Dropdown bound to CategoryId -->
+                    <option value="">-- Select Category --</option> <!-- Placeholder option -->
                 </select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                <span asp-validation-for="CategoryId" class="text-danger"></span> <!-- Validation for CategoryId -->
             </div>
+
+            <!-- Submit button -->
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary mt-2" />
             </div>
@@ -52,10 +71,15 @@
     </div>
 </div>
 
+<!-- Back to List button -->
 <div>
     <a asp-action="Index" class="btn btn-secondary mt-2">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <!-- Include validation scripts for client-side validation -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+

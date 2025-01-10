@@ -1,12 +1,13 @@
 ﻿@model UserRegisterViewModel
-
+<!-- Specifies that the view expects a UserRegisterViewModel object -->
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Register"; // Sets the page title to "Register"
 }
 
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
+<<<<<<< HEAD
             <div class="card shadow">
                 <div class="card-header bg-primary text-white text-center">
                     <h3>Sign Up</h3>
@@ -46,6 +47,63 @@
                 </div>
                 <div class="card-footer text-center">
                     <a class="link-primary" asp-action="Login">Already have an account? Log in</a>
+=======
+            <!-- Card for the registration form -->
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Sign Up</h3> <!-- Heading for the form -->
+                </div>
+                <div class="card-body">
+                    <form asp-action="Register">
+                        <!-- Display validation errors for the form -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- First Name input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="FirstName" class="form-label"></label> <!-- Label for First Name -->
+                            <input asp-for="FirstName" class="form-control" /> <!-- Input field for First Name -->
+                            <span asp-validation-for="FirstName" class="text-danger"></span> <!-- Validation error for First Name -->
+                        </div>
+
+                        <!-- Last Name input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="LastName" class="form-label"></label> <!-- Label for Last Name -->
+                            <input asp-for="LastName" class="form-control" /> <!-- Input field for Last Name -->
+                            <span asp-validation-for="LastName" class="text-danger"></span> <!-- Validation error for Last Name -->
+                        </div>
+
+                        <!-- Email input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="form-label"></label> <!-- Label for Email -->
+                            <input asp-for="Email" class="form-control" /> <!-- Input field for Email -->
+                            <span asp-validation-for="Email" class="text-danger"></span> <!-- Validation error for Email -->
+                        </div>
+
+                        <!-- Password input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="form-label"></label> <!-- Label for Password -->
+                            <input asp-for="Password" type="password" class="form-control" /> <!-- Input field for Password -->
+                            <span asp-validation-for="Password" class="text-danger"></span> <!-- Validation error for Password -->
+                        </div>
+
+                        <!-- Confirm Password input field -->
+                        <div class="form-group mb-3">
+                            <label asp-for="ConfirmPassword" class="form-label"></label> <!-- Label for Confirm Password -->
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" /> <!-- Input field for Confirm Password -->
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span> <!-- Validation error for Confirm Password -->
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="d-grid">
+                            <input type="submit" value="Sign Up" class="btn btn-primary" /> <!-- Sign Up button -->
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Footer with login link if user already has an account -->
+                <div class="card-footer text-center">
+                    <a class="link-primary" asp-action="Login">Already have an account? Log in</a> <!-- Login link -->
+>>>>>>> 69e884f (Initial project upload)
                 </div>
             </div>
         </div>
@@ -53,6 +111,10 @@
 </div>
 
 @section Scripts {
+<<<<<<< HEAD
+=======
+    <!-- Include client-side validation scripts -->
+>>>>>>> 69e884f (Initial project upload)
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

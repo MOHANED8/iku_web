@@ -1,23 +1,30 @@
-﻿@model ProductViewModel
+﻿@model ProductViewModel // Specifies that the view expects a ProductViewModel object
 
 @{
-    ViewData["Title"] = "Product Details";
+    ViewData["Title"] = "Product Details"; // Sets the page title to "Product Details"
 }
 
+<!-- Card group to display product details -->
 <div class="card-group">
+    <!-- Product image section -->
     <div class="card-img">
-        <img src="/ProductImages/@Model.ImageViewModel.ImageName" width="200px" />
-    </div>
-    <div class="card-header">
-        <h3>@Model.Name</h3>
-    </div>
-    <div class="card-body">
-        <h5 class="card-title">Price: @Model.Price</h5>
-        <p class="card-text">Description: @Model.Description</p>
-        <p class="card-text">Category: @Model?.Category?.Name</p>
-    </div>
-    <div >
-        <a asp-action="Index" class="btn btn-secondary m-3">Back to List</a>
+        <img src="/ProductImages/@Model.ImageViewModel.ImageName" width="200px" /> <!-- Displays the product image -->
     </div>
 
+    <!-- Product name section -->
+    <div class="card-header">
+        <h3>@Model.Name</h3> <!-- Displays the product name -->
+    </div>
+
+    <!-- Product details section -->
+    <div class="card-body">
+        <h5 class="card-title">Price: @Model.Price</h5> <!-- Displays the product price -->
+        <p class="card-text">Description: @Model.Description</p> <!-- Displays the product description -->
+        <p class="card-text">Category: @Model?.Category?.Name</p> <!-- Displays the category name, if available -->
+    </div>
+
+    <!-- Back to List button -->
+    <div>
+        <a asp-action="Index" class="btn btn-secondary m-3">Back to List</a> <!-- Button to navigate back to the product list -->
+    </div>
 </div>

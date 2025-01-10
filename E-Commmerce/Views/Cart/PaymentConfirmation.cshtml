@@ -1,4 +1,5 @@
 ﻿@{
+<<<<<<< HEAD
     ViewData["Title"] = "Payment Confirmation";
 }
 
@@ -6,4 +7,22 @@
     <h1 class="text-success">Payment Successful</h1>
     <p>Thank you for your purchase! Your payment has been successfully processed.</p>
     <a asp-action="UserIndex" asp-controller="Category" class="btn btn-primary mt-3">Continue Shopping</a>
+=======
+    ViewData["Title"] = "Payment Confirmation"; // Sets the page title to "Payment Confirmation"
+}
+
+<div class="container mt-5 text-center">
+    <!-- Container for the confirmation message -->
+
+    <h1 class="text-success">Payment Successful</h1>
+    <!-- Heading indicating that the payment was successful -->
+
+    <p>Thank you for your purchase! Your payment has been successfully processed.</p>
+    <!-- Message thanking the user and confirming that the payment was processed -->
+
+    <a asp-action="UserIndex" asp-controller="Category" class="btn btn-primary mt-3">
+        Continue Shopping
+    </a>
+    <!-- Button that allows the user to continue shopping by redirecting them to the UserIndex action in the Category controller -->
+>>>>>>> 69e884f (Initial project upload)
 </div>

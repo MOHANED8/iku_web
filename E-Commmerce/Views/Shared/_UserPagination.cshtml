@@ -3,26 +3,30 @@
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
 }
 
-
+<!-- Link to navigate to the first page -->
 <a asp-action="UserIndex"
    asp-route-PageNumber="1"
    class="btn btn-secondary @prevDisabled">
     First
 </a>
 
+<!-- Link to navigate to the previous page -->
 <a asp-action="UserIndex"
    asp-route-PageNumber="@(Model.PageIndex - 1)"
    class="btn btn-primary @prevDisabled">
     Previous
 </a>
-<a asp-controller="Category"
-    asp-action="UserIndex"
+
+<!-- Link to navigate to the next page -->
+<a asp-action="UserIndex"
    asp-route-PageNumber="@(Model.PageIndex + 1)"
    class="btn btn-primary @nextDisabled">
     Next
 </a>
+
+<!-- Link to navigate to the last page -->
 <a asp-action="UserIndex"
-   asp-route-PageNumber="@(Model.TotalPages )"
+   asp-route-PageNumber="@(Model.TotalPages)"
    class="btn btn-secondary @nextDisabled">
     Last
 </a>

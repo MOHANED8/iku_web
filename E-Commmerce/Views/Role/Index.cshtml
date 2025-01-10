@@ -1,29 +1,33 @@
-﻿@model List<RoleViewModel>
+﻿@model List<RoleViewModel> // Specifies that the view expects a list of RoleViewModel objects
 
 @{
-    ViewBag.Title = "Role Manger";
+    ViewBag.Title = "Role Manager"; // Sets the page title to "Role Manager"
 }
 
-<h2>Role Manger</h2>
-
+<h2>Role Manager</h2> <!-- Page heading -->
+<!-- Render a partial view for creating a new role -->
 <partial name="_RoleForm" model="new RoleViewModel()" />
 
+<!-- Table to display the list of roles -->
 <table class="table table-bordered text-center">
-<thead>
+    <thead>
         <tr>
-            <th>Role Name</th>
-            <th>Actions</th>
+            <th>Role Name</th> <!-- Column header for role name -->
+            <th>Actions</th> <!-- Column header for actions -->
         </tr>
     </thead>
     <tbody>
-        @foreach (var role in Model)
+        @foreach (var role in Model) // Loop through each role in the model
         {
             <tr>
-                <td>@role.Name</td>
+                <td>@role.Name</td> <!-- Display the role name -->
                 <td>
+                    <!-- Edit button with a link to the Edit action, passing the role ID -->
                     <a asp-action="Edit" asp-route-Id="@role.Id" class="btn btn-secondary">Edit</a> |
+
+                    <!-- Delete button with a confirmation prompt -->
                     <a asp-action="Delete" asp-route-Id="@role.Id" class="btn btn-danger"
-                    onclick="return confirm('Are You Sure To Delete')">Delete</a>
+                       onclick="return confirm('Are You Sure To Delete')">Delete</a>
                 </td>
             </tr>
         }

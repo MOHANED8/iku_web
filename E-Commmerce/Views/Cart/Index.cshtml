@@ -1,13 +1,24 @@
 ﻿@model ShoppingCart
+<<<<<<< HEAD
 
 <div class="container mt-5">
     <h2>Your Cart</h2>
     @if (Model.Items.Count == 0)
     {
+=======
+<!-- Specifies that the view expects a ShoppingCart model -->
+
+<div class="container mt-5">
+    <h2>Your Cart</h2> <!-- Page heading -->
+    @if (Model.Items.Count == 0)
+    {
+        <!-- If the cart is empty, display a message encouraging the user to start shopping -->
+>>>>>>> 69e884f (Initial project upload)
         <p>Your cart is empty. Start shopping now!</p>
     }
     else
     {
+<<<<<<< HEAD
         <table class="table">
             <thead>
                 <tr>
@@ -15,11 +26,22 @@
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Subtotal</th>
+=======
+        <!-- If the cart contains items, display the table with cart details -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th> <!-- Column for product name -->
+                    <th>Price</th> <!-- Column for product price -->
+                    <th>Quantity</th> <!-- Column for quantity -->
+                    <th>Subtotal</th> <!-- Column for the subtotal (price * quantity) -->
+>>>>>>> 69e884f (Initial project upload)
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model.Items)
                 {
+<<<<<<< HEAD
                     <tr>
                         <td>@item.ProductName</td>
                         <td>@item.Price</td>
@@ -30,13 +52,37 @@
                 <tr>
                     <td colspan="3" class="text-end"><strong>Total:</strong></td>
                     <td><strong>@Model.TotalPrice</strong></td>
+=======
+                    <!-- Loop through each item in the shopping cart -->
+                    <tr>
+                        <td>@item.ProductName</td> <!-- Display the product name -->
+                        <td>@item.Price</td> <!-- Display the product price -->
+                        <td>@item.Quantity</td> <!-- Display the product quantity -->
+                        <td>@(item.Price * item.Quantity)</td> <!-- Calculate and display the subtotal (Price * Quantity) -->
+                    </tr>
+                }
+
+                <!-- Display the total price for all items in the cart -->
+                <tr>
+                    <td colspan="3" class="text-end"><strong>Total:</strong></td> <!-- Label for the total -->
+                    <td><strong>@Model.TotalPrice</strong></td> <!-- Display the total price -->
+>>>>>>> 69e884f (Initial project upload)
                 </tr>
             </tbody>
         </table>
 
+<<<<<<< HEAD
+=======
+        <!-- Button to proceed to payment -->
+>>>>>>> 69e884f (Initial project upload)
         <div class="text-end">
             <a asp-action="Payment" asp-controller="Cart" class="btn btn-primary">Proceed to Payment</a>
         </div>
     }
+<<<<<<< HEAD
     
 </div>
+=======
+</div>
+
+>>>>>>> 69e884f (Initial project upload)

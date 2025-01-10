@@ -1,24 +1,38 @@
 ﻿@{
+<<<<<<< HEAD
     var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
 }
 
+=======
+    // Determine if the 'Previous' and 'Next' buttons should be disabled
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : ""; // Add 'disabled' if there's no previous page
+    var nextDisabled = !Model.HasNextPage ? "disabled" : ""; // Add 'disabled' if there's no next page
+}
+
+<!-- Link to navigate to the first page -->
+>>>>>>> 69e884f (Initial project upload)
 <a asp-action="Index"
    asp-route-PageNumber="1"
    class="btn btn-secondary @prevDisabled">
     First
 </a>
 
+<!-- Link to navigate to the previous page -->
 <a asp-action="Index"
    asp-route-PageNumber="@(Model.PageIndex - 1)"
    class="btn btn-primary @prevDisabled">
     Previous
 </a>
+
+<!-- Link to navigate to the next page -->
 <a asp-action="Index"
    asp-route-PageNumber="@(Model.PageIndex + 1)"
    class="btn btn-primary @nextDisabled">
     Next
 </a>
+
+<!-- Link to navigate to the last page -->
 <a asp-action="Index"
    asp-route-PageNumber="@(Model.TotalPages)"
    class="btn btn-secondary @nextDisabled">

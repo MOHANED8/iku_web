@@ -1,45 +1,64 @@
 ﻿@model CreateUserViewModel
-
+<!-- Specifies that the view expects a CreateUserViewModel object -->
 @{
-    ViewBag.Title = "Create User ";
+    ViewBag.Title = "Create User "; // Sets the page title to "Create User"
 }
 
-<h1>Create User</h1>
+<h1>Create User</h1> <!-- Heading for the user creation page -->
+<!-- Form for creating a new user -->
 <form method="post" asp-controller="Account" asp-action="Create" asp-route-PageNumber="@ViewBag.LastPage" class="form-control">
+    <!-- Displays any validation errors related to the model -->
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <div >
-        <label asp-for="FirstName" class="control-label"></label>
-        <input asp-for="FirstName" class="form-control" />
-        <span asp-validation-for="FirstName" class="text-danger"></span>
-    </div>  
-    <div >
-        <label asp-for="LastName" class="control-label"></label>
-        <input asp-for="LastName" class="form-control" />
-        <span asp-validation-for="LastName" class="text-danger"></span>
-    </div>
+
+    <!-- First Name Input -->
     <div>
-        <label asp-for="Email" class="control-label"></label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
+        <label asp-for="FirstName" class="control-label"></label> <!-- Label for First Name -->
+        <input asp-for="FirstName" class="form-control" /> <!-- Input field for First Name -->
+        <span asp-validation-for="FirstName" class="text-danger"></span> <!-- Validation error message for First Name -->
     </div>
+
+    <!-- Last Name Input -->
     <div>
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
+        <label asp-for="LastName" class="control-label"></label> <!-- Label for Last Name -->
+        <input asp-for="LastName" class="form-control" /> <!-- Input field for Last Name -->
+        <span asp-validation-for="LastName" class="text-danger"></span> <!-- Validation error message for Last Name -->
     </div>
+
+    <!-- Email Input -->
     <div>
-        <label asp-for="IsAdmin" class="control-label"></label>
-        <input asp-for="IsAdmin" class="form-check-inline mt-3"/>
-        <span asp-validation-for="IsAdmin" class="text-danger"></span>
+        <label asp-for="Email" class="control-label"></label> <!-- Label for Email -->
+        <input asp-for="Email" class="form-control" /> <!-- Input field for Email -->
+        <span asp-validation-for="Email" class="text-danger"></span> <!-- Validation error message for Email -->
     </div>
+
+    <!-- Password Input -->
+    <div>
+        <label asp-for="Password" class="control-label"></label> <!-- Label for Password -->
+        <input asp-for="Password" class="form-control" /> <!-- Input field for Password -->
+        <span asp-validation-for="Password" class="text-danger"></span> <!-- Validation error message for Password -->
+    </div>
+
+    <!-- Admin Checkbox -->
+    <div>
+        <label asp-for="IsAdmin" class="control-label"></label> <!-- Label for Admin Checkbox -->
+        <input asp-for="IsAdmin" class="form-check-inline mt-3" /> <!-- Checkbox for IsAdmin -->
+        <span asp-validation-for="IsAdmin" class="text-danger"></span> <!-- Validation error message for IsAdmin -->
+    </div>
+
+    <!-- Submit Button -->
     <div class="mt-3">
-        <input type="submit" value="Create" class="btn btn-primary" />
+        <input type="submit" value="Create" class="btn btn-primary" /> <!-- Submit button to create the user -->
     </div>
 </form>
 
+<!-- Link to go back to the user list -->
 <div>
-    <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a> <!-- Button to go back to the list of users -->
 </div>
+
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <!-- Include client-side validation scripts -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

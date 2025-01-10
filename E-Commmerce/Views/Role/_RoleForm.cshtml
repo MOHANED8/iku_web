@@ -1,12 +1,22 @@
-﻿@model RoleViewModel
+﻿@model RoleViewModel // Specifies that the view expects a model of type RoleViewModel
 
-
+<!-- Form for creating a new role -->
 <form method="post" asp-controller="Role" asp-action="Index">
+    <!-- Form group for role name -->
     <div class="form-group">
+        <!-- Label for the Name property -->
         <label asp-for="Name"></label>
+
+        <!-- Input field bound to the Name property of the RoleViewModel -->
         <input asp-for="Name" class="form-control" />
+
+        <!-- Validation message for the Name property -->
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
+
+    <!-- Submit button to create the role -->
     <button type="submit" class="btn btn-primary mt-2 mb-2">Create</button>
+
+    <!-- Separator line -->
     <hr />
 </form>

@@ -1,14 +1,16 @@
 ﻿@model PageList<UserViewModel>
-
+<!-- Specifies that the view expects a PageList<UserViewModel> object -->
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Index"; // Sets the page title to "Index"
 }
 
-<h1>All Users</h1>
+<h1>All Users</h1> <!-- Heading for the user list page -->
 
 <p>
     <a asp-action="Create" class="btn btn-success">Create New</a>
+    <!-- Link to create a new user, this triggers the Create action -->
 </p>
+<<<<<<< HEAD
 <table class="table table-striped table-hover">
     <thead>
         <tr>
@@ -18,12 +20,27 @@
             <th>Email</th>
             <th>Role</th>
             <th>Actions</th>
+=======
+
+<table class="table table-striped table-hover">
+    <!-- Table displaying the list of users -->
+    <thead>
+        <tr>
+            <th>#</th> <!-- Column for user index -->
+            <th>Full Name</th> <!-- Column for the user's full name -->
+            <th>UserName</th> <!-- Column for the user's username -->
+            <th>Email</th> <!-- Column for the user's email -->
+            <th>Role</th> <!-- Column for the user's role -->
+            <th>Actions</th> <!-- Column for action buttons -->
+>>>>>>> 69e884f (Initial project upload)
         </tr>
     </thead>
     <tbody>
         @for (int i = 0; i < Model.Count; i++)
         {
+            <!-- Loop through each user in the list -->
             <tr>
+<<<<<<< HEAD
                 <td>@(i + 1)</td>
                 <td>@Model[i].Name</td>
                 <td>@Model[i].UserName</td>
@@ -32,6 +49,18 @@
                 <td>
                     <a asp-action="Edit" asp-route-Id="@Model[i].Id" class="btn btn-secondary">Edit</a>
                     |
+=======
+                <td>@(i + 1)</td> <!-- Displays the index of the user -->
+                <td>@Model[i].Name</td> <!-- Displays the user's full name -->
+                <td>@Model[i].UserName</td> <!-- Displays the user's username -->
+                <td>@Model[i].Email</td> <!-- Displays the user's email -->
+                <td>@Model[i].Role</td> <!-- Displays the user's role -->
+                <td>
+                    <!-- Edit button for each user -->
+                    <a asp-action="Edit" asp-route-Id="@Model[i].Id" class="btn btn-secondary">Edit</a>
+                    |
+                    <!-- Delete button for each user -->
+>>>>>>> 69e884f (Initial project upload)
                     <a asp-action="Delete" asp-route-Id="@Model[i].Id" class="btn btn-danger"
                        onclick="return confirm('Are you sure you want to delete this user?')">
                         Delete
@@ -42,4 +71,8 @@
     </tbody>
 </table>
 
+<<<<<<< HEAD
+=======
+<!-- Include pagination controls -->
+>>>>>>> 69e884f (Initial project upload)
 <partial name="_Pagination" />
